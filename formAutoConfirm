@@ -1,0 +1,11 @@
+  function AutoConfirmation(e){
+      var theirFirst = e.values[2];
+      var theirEmail = e.values[8];
+      var subject = "Application Submitted";
+      var message = "Thank you, " + theirFirst + " for your expressed interest in working at Ross Camp. " + 
+                    "We will be setting up interviews  within the coming weeks, and will be in touch soon. "+
+                     "I look forward  to our interview." +
+                     "All the Best, ";
+
+   MailApp.sendEmail (theirEmail, subject, message);
+  }
